@@ -74,8 +74,6 @@ runs:
         ARGS="scan ${{ inputs.scan-path }}"
         ARGS="$ARGS -f ${{ inputs.output }}"
         ARGS="$ARGS -o $REPORT_DIR/report"
-        ARGS="$ARGS --no-telemetry"
-
         if [ "${{ inputs.verbose }}" = "true" ]; then
           ARGS="$ARGS --verbose"
         fi
